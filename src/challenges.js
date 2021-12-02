@@ -19,8 +19,12 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-
+function concatName(frase) {
+  let ultimoItem = frase[frase.length - 1];
+  console.log(ultimoItem);
+  let primeiroItem = frase[0];
+  console.log(primeiroItem);
+  return `${ultimoItem}, ${primeiroItem}`;
 }
 
 // Desafio 5
