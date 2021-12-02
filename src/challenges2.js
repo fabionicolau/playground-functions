@@ -5,8 +5,9 @@ function techList(array, name) {
   }
 
   let listaTech = [];
+  let objeto = {};
   for (let tecnologias of array.sort()) {
-    let objeto = {
+    objeto = {
       tech: tecnologias,
       name,
     };
