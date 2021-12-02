@@ -74,7 +74,7 @@ function fizzBuzz(array) {
     } else {
       arrayFizzBuzz.push('bug!');
     }
-  return arrayFizzBuzz
+  return arrayFizzBuzz;
 }
 
 // Desafio 9
@@ -96,7 +96,7 @@ function encode(string) {
       string = string.replace('u', '5');
     }
   }
-  return string
+  return string;
 }
 
 function decode(string) {
@@ -117,7 +117,7 @@ function decode(string) {
       string = string.replace('5', 'u');
     }
   }
-  return string
+  return string;
 }
 
 module.exports = {
