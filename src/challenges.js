@@ -54,17 +54,17 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (distanciaCat1 < distanciacat2) {
     return 'cat1';
-  } else if (distanciacat2 < distanciaCat1) {
-    return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
   }
+  if (distanciacat2 < distanciaCat1) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(array) {
-  let arrayFizzBuzz = []
-  for (let numeros of array)
+  let arrayFizzBuzz = [];
+  for (let numeros of array) {
     if (numeros % 3 === 0 && numeros % 5 !== 0) {
       arrayFizzBuzz.push('fizz');
     } else if (numeros % 5 === 0 && numeros % 3 !== 0) {
@@ -74,6 +74,7 @@ function fizzBuzz(array) {
     } else {
       arrayFizzBuzz.push('bug!');
     }
+  }
   return arrayFizzBuzz;
 }
 
