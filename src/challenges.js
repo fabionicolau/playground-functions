@@ -65,12 +65,12 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let arrayFizzBuzz = [];
   for (let numeros of array) {
-    if (numeros % 3 === 0 && numeros % 5 !== 0) {
-      arrayFizzBuzz.push('fizz');
-    } else if (numeros % 5 === 0 && numeros % 3 !== 0) {
-      arrayFizzBuzz.push('buzz');
-    } else if (numeros % 5 === 0 && numeros % 3 === 0) {
+    if (numeros % 3 === 0 && numeros % 5 === 0) {
       arrayFizzBuzz.push('fizzBuzz');
+    } else if (numeros % 5 === 0) {
+      arrayFizzBuzz.push('buzz');
+    } else if (numeros % 3 === 0) {
+      arrayFizzBuzz.push('fizz');
     } else {
       arrayFizzBuzz.push('bug!');
     }

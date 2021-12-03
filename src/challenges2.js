@@ -37,11 +37,8 @@ function generatePhoneNumber(array) {
     }
     contador = 0;
   }
-
   return `(${array.slice(0, 2).join('')}) ${array.slice(2, 7).join('')}-${array.slice(7, 11).join('')}`;
 }
-
-console.log((generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1])));
 
 // Desafio 12
 function triangleCheck() {
