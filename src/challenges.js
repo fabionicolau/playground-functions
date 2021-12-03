@@ -80,43 +80,17 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  for (let letras of string) {
-    if (letras === 'a') {
-      string = string.replace('a', '1');
-    }
-    if (letras === 'e') {
-      string = string.replace('e', '2');
-    }
-    if (letras === 'i') {
-      string = string.replace('i', '3');
-    }
-    if (letras === 'o') {
-      string = string.replace('o', '4');
-    }
-    if (letras === 'u') {
-      string = string.replace('u', '5');
-    }
+  for (let index = 0; index < string.length; index += 1) {
+    string = string.replace('a', '1').replace('e', '2').replace('i', '3').replace('o', '4')
+      .replace('u', '5');
   }
   return string;
 }
 
 function decode(string) {
-  for (let letras of string) {
-    if (letras === '1') {
-      string = string.replace('1', 'a');
-    }
-    if (letras === '2') {
-      string = string.replace('2', 'e');
-    }
-    if (letras === '3') {
-      string = string.replace('3', 'i');
-    }
-    if (letras === '4') {
-      string = string.replace('4', 'o');
-    }
-    if (letras === '5') {
-      string = string.replace('5', 'u');
-    }
+  for (let index = 0; index < string.length; index += 1) {
+    string = string.replace('1', 'a').replace('2', 'e').replace('3', 'i').replace('4', 'o')
+      .replace('5', 'u');
   }
   return string;
 }
